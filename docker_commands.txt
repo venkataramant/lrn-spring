@@ -1,0 +1,2 @@
+docker volume create ms_pg_data -d local 
+docker compose -f local_setup/postgres/docker-compose-postgres.yaml up
