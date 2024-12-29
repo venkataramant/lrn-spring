@@ -1,10 +1,10 @@
-package tvr.lrn.ms.xmlac;
+package tvr.lrn.nb.ac;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import tvr.lrn.ms.models.xml.Car;
+import tvr.lrn.nb.models.xml.Car;
 
 public class XMLACMain {
 

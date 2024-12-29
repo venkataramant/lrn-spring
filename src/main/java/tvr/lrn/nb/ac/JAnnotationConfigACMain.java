@@ -1,10 +1,10 @@
-package tvr.lrn.ms.configac;
+package tvr.lrn.nb.ac;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import tvr.lrn.ms.configac.config.JavaSpringConfiguration;
-import tvr.lrn.ms.models.ifc.Vehicle;
+import tvr.lrn.nb.config.JavaSpringConfiguration;
+import tvr.lrn.nb.models.ifc.Vehicle;
 
 public class JAnnotationConfigACMain {
 

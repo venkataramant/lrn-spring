@@ -1,4 +1,4 @@
-package tvr.lrn.ms.configac.config;
+package tvr.lrn.nb.config;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -8,9 +8,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.PropertySource;
 
-import tvr.lrn.ms.models.ifc.Wheel;
-import tvr.lrn.ms.models.xml.Car;
-import tvr.lrn.ms.models.xml.MyTire;
+import tvr.lrn.nb.models.ifc.Wheel;
+import tvr.lrn.nb.models.xml.Car;
+import tvr.lrn.nb.models.xml.MyTire;
 
 @Configuration
 @PropertySource("classpath:application.properties")

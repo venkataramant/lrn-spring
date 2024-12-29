@@ -1,6 +1,6 @@
-package tvr.lrn.ms.models.xml;
+package tvr.lrn.nb.models.xml;
 
-import tvr.lrn.ms.models.ifc.Wheel;
+import tvr.lrn.nb.models.ifc.Wheel;
 
 
 public class MyTire implements Wheel{

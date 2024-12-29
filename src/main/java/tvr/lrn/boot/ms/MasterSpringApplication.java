@@ -1,4 +1,4 @@
-package tvr.lrn.ms;
+package tvr.lrn.boot.ms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
