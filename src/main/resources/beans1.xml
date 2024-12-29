@@ -5,5 +5,10 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 <bean id="car1" class="tvr.lrn.ms.models.xml.Car">
+<constructor-arg index="0" value="mySuperCar123"/>
+ <constructor-arg index="1" ref="wheel1"/>
+</bean>
+<bean id="wheel1" class="tvr.lrn.ms.models.xml.MyTire">
+<constructor-arg value="mytire123"/>
 </bean>
 </beans>

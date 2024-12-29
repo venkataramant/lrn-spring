@@ -1,4 +1,4 @@
-package tvr.lrn.ms.models.xml.ifc;
+package tvr.lrn.ms.models.ifc;
 
 public interface Vehicle {
 	public void drive();
