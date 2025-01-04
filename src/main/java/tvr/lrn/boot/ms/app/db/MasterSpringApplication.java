@@ -1,11 +1,10 @@
-package tvr.lrn.boot.ms;
+package tvr.lrn.boot.ms.app.db;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import tvr.lrn.boot.model.ifc.Account;
 import tvr.lrn.boot.service.SavingAccountService;
 
 @SpringBootApplication

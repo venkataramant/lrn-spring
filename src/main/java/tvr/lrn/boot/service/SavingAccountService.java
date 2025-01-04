@@ -4,12 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import tvr.lrn.boot.model.SavingAccount;
-import tvr.lrn.boot.repository.SavingAccountRepository;
+import tvr.lrn.boot.repository.SavingAccountJTRepository;
 
 @Service
 public class SavingAccountService {
 	@Autowired
-	private SavingAccountRepository saRepository;
+	private SavingAccountJTRepository saRepository;
 
 	public void listAllAccountDetails() {
 		saRepository.getAccounts().forEach(System.out::println);
@@ -17,7 +17,7 @@ public class SavingAccountService {
 
 	public void createNewSA() {
 		var sa=new SavingAccount("BigBullAccount",1000000);
-		System.out.println(saRepository.save(sa));
+		System.out.println(saRepository.insert(sa));
 	}
 
 	public void fetchBigAccounts(double balance) {
