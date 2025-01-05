@@ -6,7 +6,7 @@ import lrn.tvr.examples.dao.CurrentAccountDao;
 import lrn.tvr.examples.entity.CurrentAccount;
 
 @Repository
-public interface CurrentAccountDaoImpl extends DaoImpl<CurrentAccount, Integer>, CurrentAccountDao {
+public interface CustomerDaoImpl extends DaoImpl<CurrentAccount, Integer>, CurrentAccountDao {
 
 	
 

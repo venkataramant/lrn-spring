@@ -27,6 +27,7 @@ public class MainApp {
 		SpringApplication.run(MainApp.class, args);
 	}
 
+	@Bean
 	public CommandLineRunner runThisStep(SavingAccountDao sAccountDao) {
 		return runner -> {
 			System.out.println("Running Basic Application");
@@ -35,7 +36,6 @@ public class MainApp {
 		};
 	}
 
-	@Bean
 	public CommandLineRunner runThisStep2(CurrentAccountDao cAccountDao) {
 		return runner -> {
 			System.out.println("Running Basic Application");
@@ -55,13 +55,13 @@ public class MainApp {
 			balance = scanner.nextDouble();
 			savingAccount.setFullName(fullName);
 			savingAccount.setBalance(balance);
-			sAccountDao.insertAccount(savingAccount);
+			sAccountDao.insert(savingAccount);
 			return savingAccount;
 		}
 	}
 
 	private void fetchAccount(SavingAccountDao sAccountDao, int accountNo) {
-		System.out.println(sAccountDao.getAccount(accountNo));
+		System.out.println(sAccountDao.get(accountNo));
 
 	}
 
@@ -80,13 +80,13 @@ public class MainApp {
 			cAccount.setBusinessName(bName);
 			cAccount.setBalance(balance);
 			cAccount.setOverdrawAmount(overdrawAmount);
-			cAccountDao.insertAccount(cAccount);
+			cAccountDao.insert(cAccount);
 			return cAccount;
 		}
 	}
 
 	private void fetchAccount(CurrentAccountDao cAccountDao, int accountNo) {
-		System.out.println(cAccountDao.getAccount(accountNo));
+		System.out.println(cAccountDao.get(accountNo));
 
 	}
 }
