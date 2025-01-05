@@ -1,5 +1,9 @@
 package lrn.tvr.examples.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+import org.springframework.stereotype.Component;
+
+import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,19 +12,18 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
-@Entity
 @Data
-@Table(name = "saving_account")
-public class SavingAccount {
-
+@Entity
+@Table(name = "current_account")
+public class CurrentAccount {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "account_no")
-	public int accountNo;
-
+	private int accountNo;
+	@Column(name = "business_name")
+	private String businessName;
 	@Column(name = "balance")
-	public double balance;
-
-	@Column(name = "full_name")
-	public String fullName;
+	private double balance;
+	@Column(name = "overdraw_amount")
+	private double overdrawAmount = 0.0;
 }
